@@ -1,0 +1,314 @@
+[
+  {
+    "id": "book-1",
+    "title": "21 Lições Para o Século 21",
+    "author": "Yuval Noah Harari",
+    "category": "História",
+    "description": "Uma análise das grandes questões que moldam o nosso mundo.",
+    "pdf_url": "/pdfs/21-Lições-Para-o-Século-21-by-Yuval-Noah-Harari.pdf"
+  },
+  {
+    "id": "book-2",
+    "title": "A Practical Guide to Self-Hypnosis",
+    "author": "Melvin Powers",
+    "category": "Desenvolvimento Pessoal",
+    "description": "Ferramentas práticas para explorar a autohipnose e o foco mental.",
+    "pdf_url": "/pdfs/A Practical Guide to Self-Hypnosis.pdf"
+  },
+  {
+    "id": "book-3",
+    "title": "Crash: Uma Breve História da Economia",
+    "author": "Alexandre Versignassi",
+    "category": "Economia",
+    "description": "Uma visão acessível sobre o desenvolvimento econômico mundial.",
+    "pdf_url": "/pdfs/Alexandre Versignassi - Crash Uma breve história da economia.pdf"
+  },
+  {
+    "id": "book-4",
+    "title": "As Veias Abertas da América Latina",
+    "author": "Eduardo Galeano",
+    "category": "História",
+    "description": "Um clássico que analisa a exploração econômica e política da América Latina.",
+    "pdf_url": "/pdfs/as-veias-abertas-da-america-latina-eduardo-galeano.pdf"
+  },
+  {
+    "id": "book-5",
+    "title": "A Construção Social da Realidade",
+    "author": "Peter L. Berger e Thomas Luckmann",
+    "category": "Sociologia",
+    "description": "Uma obra fundamental sobre como a sociedade constrói significado.",
+    "pdf_url": "/pdfs/bergerluckman. Construção social da realidade.pdf"
+  },
+  {
+    "id": "book-6",
+    "title": "Heights of Despair",
+    "author": "Emil Cioran",
+    "category": "Filosofia",
+    "description": "Reflexões filosóficas sombrias sobre o desespero e a condição humana.",
+    "pdf_url": "/pdfs/CioranHeightsofDespair.pdf"
+  },
+  {
+    "id": "book-7",
+    "title": "Cosmos",
+    "author": "Carl Sagan",
+    "category": "Ciência",
+    "description": "Uma introdução poética ao universo e à história da ciência.",
+    "pdf_url": "/pdfs/Cosmos - Carl Sagan.pdf"
+  },
+  {
+    "id": "book-8",
+    "title": "Estigma",
+    "author": "Erving Goffman",
+    "category": "Sociologia",
+    "description": "Análise das marcas sociais e do tratamento dado a pessoas estigmatizadas.",
+    "pdf_url": "/pdfs/Goffman  Estigma.pdf"
+  },
+  {
+    "id": "book-9",
+    "title": "A Representação do Eu na Vida Cotidiana",
+    "author": "Erving Goffman",
+    "category": "Sociologia",
+    "description": "Como as pessoas apresentam a si mesmas em interações sociais.",
+    "pdf_url": "/pdfs/Goffman,+E.+A+representação+do+eu+na+vida+cotidiana.pdf"
+  },
+  {
+    "id": "book-10",
+    "title": "Manicômios, Prisões e Conventos",
+    "author": "Erving Goffman",
+    "category": "Sociologia",
+    "description": "Estudo sobre instituições e sua influência sobre os indivíduos.",
+    "pdf_url": "/pdfs/Goffman. Manicomios-prisoes-e-conventos.pdf"
+  },
+  {
+    "id": "book-11",
+    "title": "The Presentation of Self in Everyday Life",
+    "author": "Erving Goffman",
+    "category": "Sociologia",
+    "description": "Uma análise clássica da performance social e da identidade pública.",
+    "pdf_url": "/pdfs/Goffman_Erving_The_Presentation_of_Self_in_Everyday_Life.pdf"
+  },
+  {
+    "id": "book-12",
+    "title": "Homo Deus",
+    "author": "Yuval Noah Harari",
+    "category": "História",
+    "description": "Perspectivas sobre o futuro da humanidade e das tecnologias emergentes.",
+    "pdf_url": "/pdfs/Homo Deus - Yuval Noah Harari.pdf"
+  },
+  {
+    "id": "book-13",
+    "title": "Homo Deus: A Brief History of Tomorrow",
+    "author": "Yuval Noah Harari",
+    "category": "História",
+    "description": "Uma análise sobre as possíveis direções da evolução humana moderna.",
+    "pdf_url": "/pdfs/homo_deus_a_brief_history_of_tomorrow_pdf. 2015.pdf"
+  },
+  {
+    "id": "book-14",
+    "title": "Introdução à leitura de Lacan",
+    "author": "Joel Dor",
+    "category": "Psicologia",
+    "description": "Uma introdução ao pensamento de Lacan para leitores iniciantes.",
+    "pdf_url": "/pdfs/introducao-a-leitura-de-lacan-dor-joel.pdf"
+  },
+  {
+    "id": "book-15",
+    "title": "Mindhunter",
+    "author": "John Douglas",
+    "category": "Psicologia",
+    "description": "Estudos de comportamento criminal e perfis de assassinos em série.",
+    "pdf_url": "/pdfs/John Douglas - Mindhunter.pdf"
+  },
+  {
+    "id": "book-16",
+    "title": "Rápido e Devagar: Duas Formas de Pensar",
+    "author": "Daniel Kahneman",
+    "category": "Psicologia",
+    "description": "Exploração das duas maneiras como a mente decide e toma decisões.",
+    "pdf_url": "/pdfs/kahneman-daniel-rapido-e-devagar-duas-formas-de-pensar.pdf"
+  },
+  {
+    "id": "book-17",
+    "title": "Lucid Dreaming",
+    "author": "Robert Waggoner",
+    "category": "Psicologia",
+    "description": "Conhecimento sobre sonhos lúcidos e como exercitar a consciência nos sonhos.",
+    "pdf_url": "/pdfs/Lucid_Dreaming_-by_Robert_Waggoner_-_preview_for_d.pdf"
+  },
+  {
+    "id": "book-18",
+    "title": "Manifesto Comunista",
+    "author": "Karl Marx e Friedrich Engels",
+    "category": "Política",
+    "description": "Um texto histórico sobre luta de classes e transformação social.",
+    "pdf_url": "/pdfs/Marx-Engels_Manifesto-Comunista_NOVO.pdf"
+  },
+  {
+    "id": "book-19",
+    "title": "Notas sobre a Pandemia",
+    "author": "Yuval Noah Harari",
+    "category": "História",
+    "description": "Reflexões sobre o impacto global da pandemia e suas consequências.",
+    "pdf_url": "/pdfs/Notas sobre a pandemia - Yuval Noah Harari.pdf"
+  },
+  {
+    "id": "book-20",
+    "title": "O Grande Projeto",
+    "author": "Stephen Hawking",
+    "category": "Ciência",
+    "description": "Uma visão do universo e das leis que regem a física moderna.",
+    "pdf_url": "/pdfs/O Grande Projeto - Stephen Hawking.pdf"
+  },
+  {
+    "id": "book-21",
+    "title": "O Poder do Hábito",
+    "author": "Charles Duhigg",
+    "category": "Desenvolvimento Pessoal",
+    "description": "Como hábitos são formados e como alterá-los para melhorar a vida.",
+    "pdf_url": "/pdfs/O Poder do Habito - Charles Duhigg (2).pdf"
+  },
+  {
+    "id": "book-22",
+    "title": "O Universo Numa Casca de Noz",
+    "author": "Stephen Hawking",
+    "category": "Ciência",
+    "description": "Explicações acessíveis sobre teorias de física e cosmologia.",
+    "pdf_url": "/pdfs/O-Universo-Numa-Casca-de-Noz.pdf"
+  },
+  {
+    "id": "book-23",
+    "title": "Os Dragões do Eden",
+    "author": "Carl Sagan",
+    "category": "Ciência",
+    "description": "Reflexões sobre a evolução da inteligência humana e seus mitos.",
+    "pdf_url": "/pdfs/Os Dragoes do Eden. Carl Sagan. 1978.pdf"
+  },
+  {
+    "id": "book-24",
+    "title": "Uma Breve História da Economia",
+    "author": "Paul Strathern",
+    "category": "Economia",
+    "description": "Uma narrativa concisa sobre os desenvolvimentos econômicos globais.",
+    "pdf_url": "/pdfs/Paul Strathern - Uma Breve Historia da Economia.pdf"
+  },
+  {
+    "id": "book-25",
+    "title": "Perspectivas Sociológicas: Uma Visão Humanística",
+    "author": "Peter L. Berger",
+    "category": "Sociologia",
+    "description": "Uma introdução ao pensamento sociológico com foco na experiência humana.",
+    "pdf_url": "/pdfs/peter-berger-perspectivas-sociolc3b3gicas-uma-visc3a3o-humanc3adstica-petrc3b3polis-vozes-1986.pdf"
+  },
+  {
+    "id": "book-26",
+    "title": "Philosophy of Freedom",
+    "author": "Rudolf Steiner",
+    "category": "Filosofia",
+    "description": "Discussões sobre liberdade individual e pensamento filosófico.",
+    "pdf_url": "/pdfs/Philosophy_of_Freedom-Rudolf_Steiner-4.pdf"
+  },
+  {
+    "id": "book-27",
+    "title": "Why Zebras Don't Get Ulcers",
+    "author": "Robert M. Sapolsky",
+    "category": "Ciência",
+    "description": "Entendimento do estresse, doenças relacionadas e maneiras de lidar com eles.",
+    "pdf_url": "/pdfs/Robert M. Sapolsky-Why Zebras Don't Get Ulcers_ An Updated Guide To Stress, Stress Related Diseases, and Coping, 3rd Edition (2004).pdf"
+  },
+  {
+    "id": "book-28",
+    "title": "História das Estruturas",
+    "author": "Vladimir Safatle",
+    "category": "Psicologia",
+    "description": "Estudo crítico sobre a teoria lacaniana das estruturas sociais.",
+    "pdf_url": "/pdfs/Safatle - Historia das Estruturas (in Lacan).pdf"
+  },
+  {
+    "id": "book-29",
+    "title": "Cinismo e Falácia da Crítica",
+    "author": "Vladimir Safatle",
+    "category": "Filosofia",
+    "description": "Uma reflexão sobre o papel do ceticismo e da crítica na sociedade.",
+    "pdf_url": "/pdfs/safatle-vladimir-cinismo-e-falc3aancia-da-crc3adtica.pdf"
+  },
+  {
+    "id": "book-30",
+    "title": "Sapiens: Uma Breve História da Humanidade",
+    "author": "Yuval Noah Harari",
+    "category": "História",
+    "description": "Uma jornada pela evolução da espécie humana e suas grandes transformações.",
+    "pdf_url": "/pdfs/Sapiens Uma Breve História da Humanidade. 2011.pdf"
+  },
+  {
+    "id": "book-31",
+    "title": "Menos Que Nada",
+    "author": "Slavoj Žižek",
+    "category": "Filosofia",
+    "description": "Ensaios filosóficos sobre a cultura contemporânea e o ponto de vista do autor.",
+    "pdf_url": "/pdfs/Slavoj Zizek - Menos Que Nada -.pdf"
+  },
+  {
+    "id": "book-32",
+    "title": "O Sublime Objeto da Ideologia",
+    "author": "Slavoj Žižek",
+    "category": "Filosofia",
+    "description": "Uma análise crítica da ideologia através de psicanálise e teoria política.",
+    "pdf_url": "/pdfs/Slavoj Zizek. O sublime objeto da ideologia.pdf"
+  },
+  {
+    "id": "book-33",
+    "title": "The Sublime Object of Ideology",
+    "author": "Slavoj Žižek",
+    "category": "Filosofia",
+    "description": "A versão em inglês do influente trabalho de Žižek sobre ideologia.",
+    "pdf_url": "/pdfs/slavoj-zizek-the-sublime-object-of-ideology-second-edition-the-essential-zizek-2009.pdf"
+  },
+  {
+    "id": "book-34",
+    "title": "A Brief History of Time",
+    "author": "Stephen Hawking",
+    "category": "Ciência",
+    "description": "Explicações sobre o tempo, espaço e as leis fundamentais do universo.",
+    "pdf_url": "/pdfs/stephen_hawking_a_brief_history_of_time.pdf"
+  },
+  {
+    "id": "book-35",
+    "title": "Subliminar: Como o inconsciente nos influencia",
+    "author": "Leonard Mlodinow",
+    "category": "Psicologia",
+    "description": "Uma investigação sobre as forças inconscientes que influenciam nossas escolhas.",
+    "pdf_url": "/pdfs/Subliminar_ Como o inconsciente - Leonard Mlodinow.pdf"
+  },
+  {
+    "id": "book-36",
+    "title": "The Elephant and the Blind",
+    "author": "Unknown",
+    "category": "Ciência",
+    "description": "Uma narrativa breve sobre percepção e conhecimento, inspirada na história do elefante e dos cegos.",
+    "pdf_url": "/pdfs/the-elephant-and-the-blind-1.pdf"
+  },
+  {
+    "id": "book-37",
+    "title": "Uma Breve História do Tempo",
+    "author": "Stephen Hawking",
+    "category": "Ciência",
+    "description": "Outro clássico sobre física e cosmologia para leitores curiosos.",
+    "pdf_url": "/pdfs/Uma Breve História do Tempo - Stephen Hawking.pdf"
+  },
+  {
+    "id": "book-38",
+    "title": "Violência",
+    "author": "Slavoj Žižek",
+    "category": "Sociologia",
+    "description": "Uma investigação sobre as formas visíveis e invisíveis da violência na sociedade.",
+    "pdf_url": "/pdfs/Violencia - Slavoj Zizek.pdf"
+  },
+  {
+    "id": "book-39",
+    "title": "21 Lessons for the 21st Century",
+    "author": "Yuval Noah Harari",
+    "category": "História",
+    "description": "Reflexões sobre os maiores desafios do mundo contemporâneo.",
+    "pdf_url": "/pdfs/yuval-noah-harari-21-lessons-for-the-21st-century. 2018.pdf"
+  }
+]
