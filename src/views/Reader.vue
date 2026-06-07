@@ -48,4 +48,3 @@ const pdfUrl = computed(() => book.value?.pdf_url)
     </div>
   </div>
 </template>
-

@@ -116,4 +116,3 @@ function submitComment() {
     </div>
   </div>
 </template>
-
