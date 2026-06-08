@@ -14,10 +14,22 @@ function changePage(value) {
 </script>
 
 <template>
-  <div class="pagination-controls">
-    <button @click="changePage(page - 1)" :disabled="page === 1">Anterior</button>
-    <span>Página {{ page }} of {{ totalPages }}</span>
-    <button @click="changePage(page + 1)" :disabled="page === totalPages">Próxima</button>
+  <div class="d-flex align-items-center justify-content-center gap-3 py-3">
+    <button
+      class="btn btn-outline-secondary btn-sm text -white-50"
+      @click="changePage(page - 1)"
+      :disabled="page === 1"
+    >
+      Anterior
+    </button>
+    <span class="text-muted text-white-50">Página {{ page }} de {{ totalPages }}</span>
+    <button
+      class="btn btn-outline-secondary btn-sm text-white-50"
+      @click="changePage(page + 1)"
+      :disabled="page === totalPages"
+    >
+      Próxima
+    </button>
   </div>
 </template>
 

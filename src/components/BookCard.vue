@@ -11,27 +11,29 @@ const canDownload = computed(() => props.book?.pdf_url)
 </script>
 
 <template>
-  <article class="book-card">
-    <div class="book-card__meta">
-      <span class="book-category">{{ book.category }}</span>
-    </div>
-    <h3>{{ book.title }}</h3>
-    <p class="book-author">{{ book.author }}</p>
-    <p class="book-description">{{ book.description }}</p>
-    <div class="book-actions">
-      <router-link class="button button--primary" :to="`/book/${book.id}`"
-        >Ver detalhes</router-link
-      >
-      <a
-        v-if="canDownload"
-        class="button button--secondary"
-        :href="book.pdf_url"
-        target="_blank"
-        rel="noopener"
-        download
-      >
-        Download
-      </a>
+  <article class="card h-100 border-0 shadow-sm">
+    <div class="card-body d-flex flex-column">
+      <div class="mb-3">
+        <span class="badge bg-secondary text-uppercase">{{ book.category }}</span>
+      </div>
+      <h3 class="card-title h5">{{ book.title }}</h3>
+      <p class="text-muted mb-2">{{ book.author }}</p>
+      <p class="card-text text-body-secondary flex-grow-1">{{ book.description }}</p>
+      <div class="mt-4 d-flex flex-wrap gap-2">
+        <router-link class="btn btn-primary btn-sm btn-dark" :to="`/book/${book.id}`"
+          >Ver detalhes</router-link
+        >
+        <a
+          v-if="canDownload"
+          class="btn btn-outline-secondary btn-sm text-white-50 btn-dark"
+          :href="book.pdf_url"
+          target="_blank"
+          rel="noopener"
+          download
+        >
+          Download
+        </a>
+      </div>
     </div>
   </article>
 </template>

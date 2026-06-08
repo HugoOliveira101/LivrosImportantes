@@ -20,24 +20,39 @@ async function handleSubmit() {
 </script>
 
 <template>
-  <div class="auth-page">
-    <div class="auth-card">
-      <h1>Login</h1>
-      <p>Entre com suas credenciais para acessar o leitor e recursos de comentários.</p>
-      <label>
-        Email
-        <input type="email" v-model="email" placeholder="você@exemplo.com" />
-      </label>
-      <label>
-        Senha
-        <input type="password" v-model="password" placeholder="••••••••" />
-      </label>
-      <button class="button button--primary" @click.prevent="handleSubmit">Login</button>
-      <p class="auth-footer">
-        Não tem uma conta? <router-link to="/register">Crie uma</router-link>
-      </p>
-      <p v-if="auth.error" class="auth-error">{{ auth.error }}</p>
+  <div class="row justify-content-center">
+    <div class="col-12 col-md-8 col-lg-5">
+      <div class="card shadow-sm border-0 bg-dark text-white">
+        <div class="card-body p-4">
+          <h1 class="h3 mb-2">Login</h1>
+          <p class="text-muted mb-4 text-white-50">
+            Entre com suas credenciais para acessar o leitor e recursos de comentários.
+          </p>
+
+          <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input
+              type="email"
+              v-model="email"
+              class="form-control"
+              placeholder="você@exemplo.com"
+            />
+          </div>
+
+          <div class="mb-4">
+            <label class="form-label">Senha</label>
+            <input type="password" v-model="password" class="form-control" placeholder="••••••••" />
+          </div>
+
+          <button class="btn btn-primary w-100 btn-ghost" @click.prevent="handleSubmit">Login</button>
+
+          <p class="text-center text-muted mt-3 mb-0 text-white-50">
+            Não tem uma conta? <router-link to="/register">Crie uma</router-link>
+          </p>
+
+          <div v-if="auth.error" class="alert alert-danger mt-3 mb-0">{{ auth.error }}</div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
-

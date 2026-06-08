@@ -26,25 +26,38 @@ const pdfUrl = computed(() => book.value?.pdf_url)
 
 <template>
   <div class="page-shell">
-    <div class="reader-header">
-      <router-link class="back-link" :to="`/book/${bookId}`">← Voltar ao livro</router-link>
+    <div class="mb-4">
+      <router-link class="text-decoration-none text-muted text-white-50" :to="`/book/${bookId}`"
+        >← Voltar ao livro</router-link
+      >
     </div>
 
-    <div v-if="!book" class="reader-empty">
+    <div v-if="!book" class="card shadow-sm border-0 p-4">
       <h2>Livro não disponível</h2>
       <p>O livro selecionado não pode ser encontrado no catálogo.</p>
     </div>
 
-    <div v-else class="reader-frame-wrapper">
-      <h1>{{ book.title }}</h1>
-      <p class="reader-meta">Por {{ book.author }} · {{ book.category }}</p>
-      <div class="reader-actions">
-        <a class="button button--secondary" :href="pdfUrl" target="_blank" rel="noopener" download
-          >Baixar PDF</a
-        >
+    <div v-else class="card shadow-sm border-0 p-4">
+      <div class="d-flex flex-column gap-3 mb-4">
+        <div>
+          <h1 class="h4 mb-1">{{ book.title }}</h1>
+          <p class="text-muted mb-0">Por {{ book.author }} · {{ book.category }}</p>
+        </div>
+        <div>
+          <a
+            class="btn btn-outline-secondary btn-sm text-white-50 btn-dark"
+            :href="pdfUrl"
+            target="_blank"
+            rel="noopener"
+            download
+            >Baixar PDF</a
+          >
+        </div>
       </div>
-      <iframe class="reader-frame" v-if="pdfUrl" :src="pdfUrl" title="Online book reader"></iframe>
-      <p v-else class="reader-empty">Nenhum arquivo PDF disponível para este livro.</p>
+      <div v-if="pdfUrl">
+        <iframe class="reader-frame" :src="pdfUrl" title="Online book reader"></iframe>
+      </div>
+      <p v-else class="text-muted">Nenhum arquivo PDF disponível para este livro.</p>
     </div>
   </div>
 </template>

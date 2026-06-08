@@ -12,7 +12,6 @@ onMounted(() => {
   booksStore.loadBooks()
 })
 
-const heading = 'Livros Importantes'
 const description = 'Pesquise e explore uma coleção de livros importantes em diversas categorias.'
 
 const categories = computed(() => booksStore.categories)
@@ -24,40 +23,47 @@ const totalPages = computed(() => booksStore.totalPages)
   <div class="page-shell">
     <NavBar />
 
-    <section class="hero-panel">
-      <div>
-        <p class="eyebrow">Catálogo de Livros</p>
-        <h1>{{ heading }}</h1>
-        <p class="hero-text">{{ description }}</p>
+    <section class="mb-4">
+      <div class="hero-panel p-4 p-md-5">
+        <p class="text-uppercase text-muted mb-2 small text-white-50">Catálogo de Livros</p>
+        <h1 class="display-6 fw-semibold mb-3">{{ heading }}</h1>
+        <p class="mb-0">{{ description }}</p>
       </div>
     </section>
 
-    <section class="catalog-grid">
-      <div class="catalog-controls">
-        <SearchBar v-model="booksStore.query" />
-
-        <div class="category-list">
-          <button
-            v-for="cat in categories"
-            :key="cat"
-            :class="['category-button', { active: booksStore.category === cat }]"
-            @click="booksStore.setCategory(cat)"
-          >
-            {{ cat }}
-          </button>
+    <section>
+      <div class="row g-3 align-items-center mb-4">
+        <div class="col-12 col-lg-7">
+          <SearchBar v-model="booksStore.query" />
+        </div>
+        <div class="col-12 col-lg-5">
+          <div class="d-flex flex-wrap gap-2">
+            <button
+              v-for="cat in categories"
+              :key="cat"
+              type="button"
+              @click="booksStore.setCategory(cat)"
+              :class="[
+                'btn btn-sm',
+                booksStore.category === cat ? 'btn-primary' : 'btn-outline-secondary',
+              ]"
+            >
+              {{ cat }}
+            </button>
+          </div>
         </div>
       </div>
 
-      <div v-if="booksStore.status === 'loading'" class="status-message">Carregando livros…</div>
-      <div v-else-if="booksStore.error" class="status-message status-error">
-        {{ booksStore.error }}
-      </div>
-      <div v-else-if="pagedBooks.length === 0" class="status-message">
+      <div v-if="booksStore.status === 'loading'" class="alert alert-info">Carregando livros…</div>
+      <div v-else-if="booksStore.error" class="alert alert-danger">{{ booksStore.error }}</div>
+      <div v-else-if="pagedBooks.length === 0" class="alert alert-secondary">
         Nenhum livro encontrado para sua pesquisa.
       </div>
 
-      <div v-else class="cards-grid">
-        <BookCard v-for="book in pagedBooks" :key="book.id" :book="book" />
+      <div v-else class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
+        <div class="col" v-for="book in pagedBooks" :key="book.id">
+          <BookCard :book="book" />
+        </div>
       </div>
 
       <PaginationControls

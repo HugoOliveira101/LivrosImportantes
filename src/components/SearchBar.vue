@@ -10,15 +10,15 @@ function updateValue(event) {
 </script>
 
 <template>
-  <div class="search-bar">
-    <label class="search-label" for="search-input">Pesquisar</label>
+  <div class="mb-3">
+    <label class="form-label visually-hidden" for="search-input">Pesquisar</label>
     <input
       id="search-input"
-      class="search-input"
+      class="form-control form-control-lg"
       type="search"
       :value="modelValue"
       @input="updateValue"
-      placeholder="por título, autor ou categoria"
+      placeholder="Pesquisar por título, autor ou categoria"
     />
   </div>
 </template>
