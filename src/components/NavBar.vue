@@ -21,8 +21,7 @@ function handleSignOut() {
     <div class="container-fluid px-0 align-items-center d-flex justify-content-between gap-3">
       <router-link class="navbar-brand fw-semibold mb-0 text-white" to="/">Livros Importantes</router-link>
 
-      <div class="d-flex flex-wrap align-items-center gap-2">
-        <router-link class="nav-link px-2 text-muted text-white-50" to="/">Catálogo</router-link>
+      <div class="d-flex flex-wrap align-items-center gap-2">        
         <template v-if="auth.isAuthenticated">
           <span class="text-muted text-white-50">Olá, {{ userName }}</span>
           <button type="button" class="btn btn-outline-secondary btn-sm " @click="handleSignOut">
@@ -31,7 +30,7 @@ function handleSignOut() {
         </template>
         <template v-else>
           <router-link class="btn btn-sm text-white-50" to="/login">Login</router-link>
-          <router-link class="btn btn-primary btn-sm btn-dark" to="/register">Registrar</router-link>
+          <router-link class="btn btn-primary btn-sm btn-dark" to="/register">Cadastrar</router-link>
         </template>
       </div>
     </div>

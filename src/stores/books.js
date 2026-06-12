@@ -1,6 +1,6 @@
 import { defineStore } from 'pinia'
 import { ref, computed, onMounted } from 'vue'
-import { fetchBooks } from '../api/books'
+import { fetchBooks } from '../api/booksApi'
 
 const STORAGE_KEY = 'livros-interactions'
 

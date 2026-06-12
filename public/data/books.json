@@ -80,14 +80,6 @@
     "pdf_url": "/pdfs/Goffman. Manicomios-prisoes-e-conventos.pdf"
   },
   {
-    "id": "book-11",
-    "title": "The Presentation of Self in Everyday Life",
-    "author": "Erving Goffman",
-    "category": "Sociologia",
-    "description": "Uma análise clássica da performance social e da identidade pública.",
-    "pdf_url": "/pdfs/Goffman_Erving_The_Presentation_of_Self_in_Everyday_Life.pdf"
-  },
-  {
     "id": "book-12",
     "title": "Homo Deus",
     "author": "Yuval Noah Harari",
@@ -102,14 +94,6 @@
     "category": "História",
     "description": "Uma análise sobre as possíveis direções da evolução humana moderna.",
     "pdf_url": "/pdfs/homo_deus_a_brief_history_of_tomorrow_pdf. 2015.pdf"
-  },
-  {
-    "id": "book-14",
-    "title": "Introdução à leitura de Lacan",
-    "author": "Joel Dor",
-    "category": "Psicologia",
-    "description": "Uma introdução ao pensamento de Lacan para leitores iniciantes.",
-    "pdf_url": "/pdfs/introducao-a-leitura-de-lacan-dor-joel.pdf"
   },
   {
     "id": "book-15",
@@ -200,14 +184,6 @@
     "pdf_url": "/pdfs/peter-berger-perspectivas-sociolc3b3gicas-uma-visc3a3o-humanc3adstica-petrc3b3polis-vozes-1986.pdf"
   },
   {
-    "id": "book-26",
-    "title": "Philosophy of Freedom",
-    "author": "Rudolf Steiner",
-    "category": "Filosofia",
-    "description": "Discussões sobre liberdade individual e pensamento filosófico.",
-    "pdf_url": "/pdfs/Philosophy_of_Freedom-Rudolf_Steiner-4.pdf"
-  },
-  {
     "id": "book-27",
     "title": "Why Zebras Don't Get Ulcers",
     "author": "Robert M. Sapolsky",
@@ -256,14 +232,6 @@
     "pdf_url": "/pdfs/Slavoj Zizek. O sublime objeto da ideologia.pdf"
   },
   {
-    "id": "book-33",
-    "title": "The Sublime Object of Ideology",
-    "author": "Slavoj Žižek",
-    "category": "Filosofia",
-    "description": "A versão em inglês do influente trabalho de Žižek sobre ideologia.",
-    "pdf_url": "/pdfs/slavoj-zizek-the-sublime-object-of-ideology-second-edition-the-essential-zizek-2009.pdf"
-  },
-  {
     "id": "book-34",
     "title": "A Brief History of Time",
     "author": "Stephen Hawking",
@@ -310,5 +278,150 @@
     "category": "História",
     "description": "Reflexões sobre os maiores desafios do mundo contemporâneo.",
     "pdf_url": "/pdfs/yuval-noah-harari-21-lessons-for-the-21st-century. 2018.pdf"
-  }
+  },
+  {
+    "id": "book-40",
+    "title": "A voz na sua cabeça: como reduzir o ruído",
+    "author": "Ethan Kross",
+    "category": "Psicologia",
+    "description": "Estratégias para controlar a voz interna e reduzir o ruído mental.",
+    "pdf_url": "/pdfs/A voz na sua cabeca_ Como reduzir o ruido - Ethan Kross.pdf"
+  },
+  {
+    "id": "book-41",
+    "title": "Being no one: Self Model Theory of Subjectivity",
+    "author": "Thomas Metzinger",
+    "category": "Filosofia",
+    "description": "Uma teoria filosófica sobre a natureza da consciência e do self.",
+    "pdf_url": "/pdfs/BeingNoOne-SelfModelTheoryOfSubjectivity-Metzinger (1).pdf"
+  },
+  {
+    "id": "book-42",
+    "title": "On Anarchism",
+    "author": "Noam Chomsky",
+    "category": "Política",
+    "description": "Uma introdução ao pensamento anarquista e suas implicações políticas.",
+    "pdf_url": "/pdfs/Chomsky. On ANARCHISM.pdf"
+  },
+  {
+    "id": "book-43",
+    "title": "Comportamento",
+    "author": "Robert M. Sapolsky",
+    "category": "Ciência",
+    "description": "Uma exploração profunda do comportamento humano e animal sob a perspectiva biológica.",
+    "pdf_url": "/pdfs/Comportamento - Robert M. Sapolsky (1).pdf"
+  },
+  {
+    "id": "book-44",
+    "title": "Simulacros e Simulação",
+    "author": "Jean Baudrillard",
+    "category": "Filosofia",
+    "description": "Uma análise crítica da realidade, mídia e cultura na era da simulação.",
+    "pdf_url": "/pdfs/jean-baudrillard-simulacros-e-simulação.pdf"
+  },
+  {
+    "id": "book-45",
+    "title": "Microfísica do Poder",
+    "author": "Michel Foucault",
+    "category": "Filosofia",
+    "description": "Análise das relações de poder e suas manifestações na sociedade.",
+    "pdf_url": "/pdfs/Michel Foucault - Microfisica do Poder -.pdf"
+  },
+  {
+    "id": "book-46",
+    "title": "Mídia, propaganda, política e manipulação",
+    "author": "Noam Chomsky",
+    "category": "Sociologia",
+    "description": "Uma crítica incisiva sobre o papel da mídia e propaganda na política moderna.",
+    "pdf_url": "/pdfs/Midia propaganda politica e manipulacao - CHOMSKY, Noam.pdf"
+  },
+  {
+    "id": "book-47",
+    "title": "Aurora",
+    "author": "Nietzsche",
+    "category": "Filosofia",
+    "description": "Reflexões filosóficas sobre a moralidade, a cultura e a condição humana.",
+    "pdf_url": "/pdfs/nietzsche-aurora.pdf"
+  },
+  {
+    "id": "book-48",
+    "title": "O materialismo eliminacionista de Paul Churchland",
+    "author": "Paul Churchland",
+    "category": "Filosofia",
+    "description": "Uma análise crítica do materialismo eliminacionista e suas implicações para a filosofia da mente.",
+    "pdf_url": "/pdfs/O materialismo eliminaciosta de Paul e Churchland.pdf"
+  },
+  {
+    "id": "book-49",
+    "title": "Origens: Catorze Bilhões de Anos",
+    "author": "Neil deGrasse Tyson",
+    "category": "Ciência",
+    "description": "Uma jornada pela história do universo, desde o Big Bang até a formação da Terra e da vida.",
+    "pdf_url": "/pdfs/origens_-catorze-bilhoes-de-ano-neil-degrasse-tyson (1).pdf"
+  },
+  {
+    "id": "book-50",
+    "title": "Quem manda  no mundo?",
+    "author": "Noam Chomsky",
+    "category": "Política",
+    "description": "Uma análise crítica sobre o poder global e as dinâmicas de controle na política internacional.",
+    "pdf_url": "/pdfs/Quem Manda no Mundo_ - Noam Chomsky.pdf"
+  },
+  {
+    "id": "book-51",
+    "title": "História das Estruturas",
+    "author": "Vladimir Safatle",
+    "category": "Filosofia",
+    "description": "Estudo crítico sobre a teoria lacaniana das estruturas sociais.",
+    "pdf_url": "TEXTO 3B - Safatle - Historia das Estruturas (in Lacan).pdf"
+  },
+  {
+    "id": "book-52",
+    "title": "The Zeitgeist Movement Defined",
+    "author": "Peter Joseph",
+    "category": "Política",
+    "description": "Uma introdução ao movimento Zeitgeist e suas ideias sobre a transformação social.",
+    "pdf_url": "/pdfs/The_Zeitgeist_Movement_Defined_PDF_Final.pdf"
+  },
+  {
+    "id": "book-53",
+    "title": "The Best Money Can`t Buy",
+    "author": "Jacque Fresco",
+    "category": "Política",
+    "description": "Uma visão crítica sobre a economia de mercado e propostas para um sistema mais justo e sustentável.",
+    "pdf_url": "/pdfs/The-Best-That-Money-Cant-Buy.pdf"
+  },
+  {
+    "id": "book-54",
+    "title": "O Capital",
+    "author": "Karl Marx",
+    "category": "Economia",
+    "description": "Uma análise crítica do capitalismo e suas dinâmicas econômicas e sociais.",
+    "pdf_url": "/pdfs/o-capital-livro-1.pdf"
+    },
+  {
+    "id": "book-55",
+    "title": "Os condenados da terra",
+    "author": "Frantz Fanon",
+    "category": "Política",
+    "description": "Uma análise sobre a colonização, a descolonização e as lutas de libertação.",
+    "pdf_url": "/pdfs/Frantz Fanon - Os Condenados da Terra-Editora Ulisseia (1961).pdf"
+  },
+  {
+    "id": "book-56",
+    "title": "Pele Negra, Máscara Branca",
+    "author": "Frantz Fanon",
+    "category": "Política",
+    "description": "Uma análise sobre a identidade negra e as dinâmicas de opressão racial.",
+    "pdf_url": "/pdfs/Frantz_Fanon_Pele_negra_mascaras_brancas.pdf"
+   },
+   {
+    "id": "book-57",
+    "title": "Anti-Édipo - Capitalismo e Esquizofrenia",
+    "author": "Gilles Deleuze",
+    "category": "Filosofia",
+    "description": "Uma análise crítica do capitalismo.",
+    "pdf_url": "/pdfs/Anti-Oedipus.pdf"
+   }
+
 ]

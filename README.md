@@ -1,7 +1,3 @@
-# .
-
-Este modelo deve ajudar você a começar a desenvolver com Vue 3 no Vite.
-
 ## Configuração Recomendada da IDE
 
 [VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (e desative o Vetur).
@@ -45,7 +41,7 @@ npm run build
 - `src/views/BookDetail.vue` — Página de detalhes do livro com download, link do leitor, curtidas e comentários
 - `src/views/Reader.vue` — Leitor de PDF integrado para usuários autenticados
 - `src/views/Login.vue` and `src/views/Register.vue` — Autenticação local simples usando o armazenamento do navegador (browser storage)
-- `src/api/books.js` — Carregador de dados do catálogo com suporte opcional a API remota via `VITE_BOOKS_API_URL`
+- `src/api/books.js` — Carregador de dados do catálogo com suporte  a API.
 - `src/stores/books.js` — Store do Pinia para o estado do catálogo e interações
 - `public/data/books.json` — Dados dos livros
 
@@ -53,6 +49,6 @@ npm run build
 
 Coloque os arquivos PDF em `public/pdfs/` e atualize o `public/data/books.json` para referenciá-los usando `/pdfs/your-file.pdf`.
 
-### Suporte opcional a API remota
+### API remota
 
-Se você quiser que o aplicativo carregue os livros de uma API externa, defina `VITE_BOOKS_API_URL` em um arquivo `.env` e sirva os dados a partir de `{API_URL}/books`.
+Utilizando as variáveis const ARCHIVE_SEARCH_URL = 'https://archive.org/advancedsearch.php' e const ARCHIVE_METADATA_URL = 'https://archive.org/metadata' no arquivo books.js na pasta 'api' para importar dados  de livros importantes  da litarartura russa em versão em português.
