@@ -422,6 +422,14 @@
     "category": "Filosofia",
     "description": "Uma análise crítica do capitalismo.",
     "pdf_url": "/pdfs/Anti-Oedipus.pdf"
+   },
+   {
+     "id": "book-58",
+     "title": "Club da Luta",
+     "author": "Chuck Palahniuk",
+     "category": "Literatura",
+     "description": "Uma narrativa sobre a insatisfação com a vida moderna e a busca por autenticidade.",
+     "pdf_url": "/pdfs/clube da luta.pdf"
    }
 
 ]

@@ -26,8 +26,7 @@ const totalPages = computed(() => booksStore.totalPages)
     <section class="mb-4">
       <div class="hero-panel p-4 p-md-5">
         <p class="text-uppercase text-muted mb-2 small text-white-50">Catálogo de Livros</p>
-        <h1 class="display-6 fw-semibold mb-3">{{ heading }}</h1>
-        <p class="mb-0">{{ description }}</p>
+        <p class="mb-0 text-white-50">{{ description }}</p>
       </div>
     </section>
 
