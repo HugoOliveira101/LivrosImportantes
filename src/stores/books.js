@@ -21,7 +21,7 @@ export const useBooksStore = defineStore('books', () => {
   const status = ref('idle')
   const error = ref(null)
   const query = ref('')
-  const category = ref('All')
+  const category = ref('Todos')
   const page = ref(1)
   const pageSize = ref(6)
   const interactions = ref(loadStoredInteractions())
@@ -39,7 +39,7 @@ export const useBooksStore = defineStore('books', () => {
       )
     }
 
-    if (category.value !== 'All') {
+    if (category.value !== 'Todos') {
       list = list.filter((book) => book.category === category.value)
     }
 
@@ -56,7 +56,7 @@ export const useBooksStore = defineStore('books', () => {
   })
 
   const categories = computed(() => [
-    'All',
+    'Todos',
     ...Array.from(new Set(books.value.map((book) => book.category))).sort(),
   ])
 
@@ -128,31 +128,36 @@ export const useBooksStore = defineStore('books', () => {
     saveInteractions()
   }
 
-  function addComment(bookId, comment) {
-    if (!comment || !comment.author) {
-      return
-    }
+function createCommentObject(bookId, { author, text }) {
+  return {
+    id: `${bookId}-${Date.now()}`,
+    author: author, 
+    text: text,     
+    createdAt: new Date().toISOString(),
+  };
+}
 
-    const existing = interactionFor(bookId)
-    const comments = [
-      ...existing.comments,
-      {
-        id: `${bookId}-${Date.now()}`,
-        ...comment,
-        createdAt: new Date().toISOString(),
-      },
-    ]
-
-    interactions.value = {
-      ...interactions.value,
-      [bookId]: {
-        ...existing,
-        comments,
-      },
-    }
-
-    saveInteractions()
+function addComment(bookId, commentInput) {
+  if (!commentInput?.author || !commentInput?.text) {
+    return;
   }
+
+  const existing = interactionFor(bookId);
+  
+  const newComment = createCommentObject(bookId, commentInput);
+
+  const comments = [...existing.comments, newComment];
+
+  interactions.value = {
+    ...interactions.value,
+    [bookId]: {
+      ...existing,
+      comments,
+    },
+  };
+
+  saveInteractions();
+}
 
   return {
     books,

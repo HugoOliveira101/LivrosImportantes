@@ -13,67 +13,67 @@ async function fetchLocalBooks() {
   return response.json()
 }
 
-export async function fetchBooks() {
-  const localBooks = await fetchLocalBooks()
-  const archiveBooks = []
+const formatField = (field, defaultValue) => 
+  Array.isArray(field) ? field.join(', ') : field || defaultValue
+
+async function fetchArchiveSearchResults() {
+  const params = new URLSearchParams({
+    q: `${DOSTOIEVSKY_QUERY} AND format:"Text PDF"`,
+    fl: 'identifier,title,creator,description',
+    rows: String(ARCHIVE_BOOKS_LIMIT),
+    page: '1',
+    output: 'json',
+  })
+
+  const response = await fetch(`${ARCHIVE_SEARCH_URL}?${params.toString()}`)
+  if (!response.ok) throw new Error(`Search failed: ${response.statusText}`)
+  
+  const json = await response.json()
+  return json.response?.docs || []
+}
+
+async function processArchiveBook(doc, index) {
+  if (!doc?.identifier) return null
 
   try {
-    const params = new URLSearchParams({
-      q: DOSTOIEVSKY_QUERY,
-      fl: 'identifier,title,creator,description',
-      rows: String(ARCHIVE_BOOKS_LIMIT),
-      page: '1',
-      output: 'json',
-    })
+    const response = await fetch(`${ARCHIVE_METADATA_URL}/${encodeURIComponent(doc.identifier)}`)
+    if (!response.ok) return null
 
-    const searchResponse = await fetch(`${ARCHIVE_SEARCH_URL}?${params.toString()}`)
-    if (!searchResponse.ok) {
-      throw new Error(`Failed to fetch archive search results: ${searchResponse.statusText}`)
+    const metadata = await response.json()
+    const pdfFile = (metadata.files || []).find(
+      (f) => f.name?.toLowerCase().endsWith('.pdf') || f.format?.toLowerCase().includes('pdf')
+    )
+
+    if (!pdfFile?.name) return null 
+
+    return {
+      id: `book-archive-${index + 1}`,
+      title: doc.title || 'Dostoiévski: tradução em português',
+      author: formatField(doc.creator, 'Fiódor Dostoiévski'),
+      category: 'Literatura',
+      description: formatField(doc.description, 'Tradução em português disponível no archive.org.'),
+      pdf_url: `https://archive.org/download/${encodeURIComponent(doc.identifier)}/${encodeURIComponent(pdfFile.name)}`,
+      source: 'archive.org',
     }
+  } catch (error) {
+    console.warn('Metadata fetch failed for', doc.identifier, error)
+    return null
+  }
+}
 
-    const searchJson = await searchResponse.json()
-    const docs = (searchJson.response && searchJson.response.docs) || []
+export async function fetchBooks() {
+  const localBooks = await fetchLocalBooks()
+  let archiveBooks = []
 
-    for (let index = 0; index < docs.length; index += 1) {
-      const doc = docs[index]
-      if (!doc?.identifier) continue
+  try {
+    const docs = await fetchArchiveSearchResults()
+    
+    const processedBooks = await Promise.all(
+      docs.map((doc, index) => processArchiveBook(doc, index))
+    )
 
-      try {
-        const metadataResponse = await fetch(
-          `${ARCHIVE_METADATA_URL}/${encodeURIComponent(doc.identifier)}`,
-        )
-        if (!metadataResponse.ok) continue
-
-        const metadata = await metadataResponse.json()
-        const pdfFile = (metadata.files || []).find(
-          (file) =>
-            file.name?.toLowerCase().endsWith('.pdf') || file.format?.toLowerCase().includes('pdf'),
-        )
-        if (!pdfFile?.name) continue
-
-        const author = Array.isArray(doc.creator)
-          ? doc.creator.join(', ')
-          : doc.creator || 'Fiódor Dostoiévski'
-
-        const description = Array.isArray(doc.description)
-          ? doc.description.join(' ')
-          : doc.description || 'Tradução em português disponível no archive.org.'
-
-        archiveBooks.push({
-          id: `book-archive-${index + 1}`,
-          title: doc.title || 'Dostoiévski: tradução em português',
-          author,
-          category: 'Literatura',
-          description,
-          pdf_url: `https://archive.org/download/${encodeURIComponent(doc.identifier)}/${encodeURIComponent(
-            pdfFile.name,
-          )}`,
-          source: 'archive.org',
-        })
-      } catch (error) {
-        console.warn('archive.org fetch failed for', doc.identifier, error)
-      }
-    }
+    archiveBooks = processedBooks.filter(Boolean)
+    
   } catch (error) {
     console.warn('Unable to load archive.org books:', error)
   }

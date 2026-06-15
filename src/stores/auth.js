@@ -48,7 +48,6 @@ export const useAuthStore = defineStore('auth', () => {
     status.value = 'loading'
     error.value = null
 
-    await new Promise((resolve) => setTimeout(resolve, 200))
     const users = loadUsers()
 
     if (users.some((existing) => existing.email === email)) {
@@ -83,7 +82,6 @@ export const useAuthStore = defineStore('auth', () => {
     status.value = 'loading'
     error.value = null
 
-    await new Promise((resolve) => setTimeout(resolve, 200))
     const users = loadUsers()
     const existing = users.find((account) => account.email === email && account.password === password)
 
